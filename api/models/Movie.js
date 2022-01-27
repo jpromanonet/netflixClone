@@ -2,11 +2,17 @@ const mongoose = require("mongoose");
 
 const MovieSchema = new mongoose.Schema(
     {
-        username:{type:String, required:true, unique:true},
-        email:{type:String, required:true, unique:true},
-        password:{type:String, required:true},
-        profilePic:{type:String, required:true},
-        isAdmin: {type: Boolean, default: false}
+        title: {type: String, required: true, unique, true},
+        desc: {type: String},
+        img: {type: String},
+        imgTitle: {type: String},
+        imgSm: {type: String},
+        trailer: { type: String},
+        video: {type: String},
+        year: {type: String},
+        limit: { type: Number},
+        genre: { type: String},
+        isSeries: {type: Boolean, default: false}
     },
     { timestamps: true }
 );
