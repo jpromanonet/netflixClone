@@ -8,10 +8,11 @@ const authRoute = require("./routes/auth");
 dotenv.config();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
+mongoose
+    .connect(process.env.MONGO_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
 })
 .then(() => console.log("DB Connection OK"))
 .catch((err) => console.log(err));
