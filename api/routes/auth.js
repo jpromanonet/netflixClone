@@ -20,4 +20,5 @@ router.post("/register", async (req, res) => {
 });
 
 // Login
-router.post("")
+
+module.exports = router;
