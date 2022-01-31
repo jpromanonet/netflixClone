@@ -21,6 +21,12 @@ router.post("/register", async (req, res) => {
 });
 
 // Login
-router.post("")
+router.post("login", (req, res) => {
+    try {
+
+    } catch(err) {
+        res.status(500);
+    }
+})
 
 module.exports = router;
