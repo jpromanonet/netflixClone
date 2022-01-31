@@ -25,7 +25,7 @@ router.post("login", (req, res) => {
     try {
 
     } catch(err) {
-        res.status(500);
+        res.status(500).json();
     }
 })
 
