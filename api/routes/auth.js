@@ -23,7 +23,7 @@ router.post("/register", async (req, res) => {
 // Login
 router.post("login", (req, res) => {
     try {
-
+        const user = User.findOne();
     } catch(err) {
         res.status(500).json();
     }
