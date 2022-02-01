@@ -33,7 +33,7 @@ router.post("/login", async (req, res) => {
         originalPassword !== req.body.password &&
             res.status(401).json("Wrong password or username!");
         
-        const {password, ...info}
+        const { password, ...info } = user._doc;
 
         res.status(200).json(user);
 
