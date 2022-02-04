@@ -6,7 +6,7 @@ const CryptoJS = require("crypto-js");
 // Update users
 
 router.put("/:id", async (req, res) => {
-    
+
 })
 
 // Delete users
